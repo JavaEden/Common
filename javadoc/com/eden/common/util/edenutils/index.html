@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.19.0-SNAPSHOT"/>
+<link rel="icon" href="https://javaeden.github.io/Common/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>EdenUtils</title>
+
+
+<meta name="description" content="A collection of utility classes and tools used throughout other Eden repositories.">
+
+
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.19.0-SNAPSHOT","baseUrl":"https://javaeden.github.io/Common","environment":"prod","version":"2.0.0"};
+</script>
+
+
+
+
+    <!-- start:inject meta-components -->
+    
+        
+            
+        
+    
+    <!-- end:inject meta-components -->
+
+
+
+    <!-- start:inject meta-components -->
+    
+    <!-- end:inject meta-components -->
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/bootstrap/3.3.1/css/bootstrap.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/font-awesome/4.7.0/css/font-awesome.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/BsDoc/f268fe27/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/BsDoc/f268fe27/assets/css/bsdoc.css"  />
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/BsDoc/f268fe27/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://javaeden.github.io/Common/assets/css/orchidSourceDoc.css"  />
+<!-- end:inject styles -->
+
+
+</head>
+<body>
+
+
+
+
+<a class="github-fork-ribbon left-top"
+   href="https://github.com/JavaEden/Common"
+   title="Fork me on GitHub">Fork me on GitHub</a>
+
+
+<header class="navbar navbar-fixed-top bs-docs-nav">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://javaeden.github.io/Common">Eden Commons</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    
+                        <li><a href="https://javaeden.github.io/Common">Home</a></li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">options<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://javaeden.github.io/Common/wiki/options/converters">Type Converters</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/wiki/options/extractors">Option Extractors</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">json<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://javaeden.github.io/Common/wiki/json/overview">Overview</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Classes<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/alloptions">AllOptions</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/androidextractor">AndroidExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotatedvalidatorwrapper">AnnotatedValidatorWrapper</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/anyoptionextractor">AnyOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/archetype">Archetype</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/archetypes">Archetypes</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/booleanconverter">BooleanConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/booleandefault">BooleanDefault</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/booleanoptionextractor">BooleanOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cli">Cli</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cliflags">CliFlags</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cliflags/flagvalue">CliFlags.FlagValue</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cliflags/parseresult">CliFlags.ParseResult</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/clogstringconverterhelper">ClogStringConverterHelper</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/converters">Converters</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/dateconverter">DateConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/dateoptionextractor">DateOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/datetimeconverter">DateTimeConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/datetimeoptionextractor">DateTimeOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/defaultextractor">DefaultExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/defaultinstancecreator">DefaultInstanceCreator</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/doubleconverter">DoubleConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/doubledefault">DoubleDefault</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/doubleoptionextractor">DoubleOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/edenpair">EdenPair</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/edenutils">EdenUtils</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/enumoptionextractor">EnumOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractable">Extractable</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/extractableconverter">ExtractableConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/extractableoptionextractor">ExtractableOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractor">Extractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractor/extractorbuilder">Extractor.ExtractorBuilder</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagaliases">FlagAliases</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagsparser">FlagsParser</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagsparser/flagsparserbuilder">FlagsParser.FlagsParserBuilder</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagsparser/parseresult">FlagsParser.ParseResult</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/flexibleiterableconverter">FlexibleIterableConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/flexiblemapconverter">FlexibleMapConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/floatconverter">FloatConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/floatdefault">FloatDefault</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/floatoptionextractor">FloatOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils">IOStreamUtils</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/inputstreamcollector">IOStreamUtils.InputStreamCollector</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/inputstreamignorer">IOStreamUtils.InputStreamIgnorer</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/inputstreamprinter">IOStreamUtils.InputStreamPrinter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/onoutputstreamcreatedcallback">IOStreamUtils.OnOutputStreamCreatedCallback</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/impliedkey">ImpliedKey</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/instancecreator">InstanceCreator</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/intdefault">IntDefault</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/intoptionextractor">IntOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/integerconverter">IntegerConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/jsonarrayoptionextractor">JSONArrayOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/jsonobjectoptionextractor">JSONObjectOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonable">Jsonable</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/listoptionextractor">ListOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/longconverter">LongConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/longdefault">LongDefault</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/longoptionextractor">LongOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/numberconverter">NumberConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/option">Option</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/optionarchetype">OptionArchetype</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/optionextractor">OptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/optionsvalidator">OptionsValidator</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/registration/prioritized">Prioritized</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/protected">Protected</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/stringarrayoptionextractor">StringArrayOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/stringconverter">StringConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/stringconverterhelper">StringConverterHelper</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/stringdefault">StringDefault</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/stringoptionextractor">StringOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/timeconverter">TimeConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/timeoptionextractor">TimeOptionExtractor</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/typeconverter">TypeConverter</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/validate">Validate</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+                    
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Packages<span class="caret"></span></a>
+                            <ul class="dropdown-menu scrollable-menu">
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json">com.eden.common.json</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util">com.eden.common.util</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli">com.eden.orchid.api.cli</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters">com.eden.orchid.api.converters</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options">com.eden.orchid.api.options</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations">com.eden.orchid.api.options.annotations</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors">com.eden.orchid.api.options.extractors</a></li>
+                                
+                                    <li><a href="https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/registration">com.eden.orchid.api.registration</a></li>
+                                
+                            </ul>
+                        </li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<div id="top"></div>
+
+
+    <div class="bs-docs-masthead" id="jumbotron">
+        <div class="container">
+            <h1 class="home-title">EdenUtils</h1>
+        </div>
+    </div>
+
+
+<div class="container bs-docs-container">
+    <div class="row">
+        <div class="col-md-9" role="main">
+        <nav aria-label="breadcrumb">
+    <ul class="breadcrumb">
+    
+    
+        <li class="breadcrumb-item"><a href="https://javaeden.github.io/Common/javadoc">README</a></li>
+    
+    
+    
+        <li class="breadcrumb-item active" aria-current="page">EdenUtils</li>
+    
+    
+    </ul>
+</nav>
+        
+
+        
+        
+            
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="sourcedoc-page orchid-sourcedoc content">
+  
+<div class="sourcedoc-section section-root section-level-1" id="EdenUtils">
+
+
+  <h1 class="sourcedoc-section section-name">EdenUtils</h1>
+  
+    <div class="sourcedoc-section section-element" id="56a7ac46b97667552725de6bd2aaf9a54420c5d2">
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public class <a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/edenutils">EdenUtils</a> extends Object</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-2" id="constructors">
+
+
+  <p class="sourcedoc-section section-name"><strong>Constructors</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="c666f06cc854d0ed6a9e2274c64c62d55cb87e2c">
+        <td class="sourcedoc-section section-signature">
+          <code>public <a href="https://javaeden.github.io/Common/javadoc/com/eden/common/util/edenutils">EdenUtils</a>()</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-2" id="methods">
+
+
+  <h2 class="sourcedoc-section section-name">Methods</h2>
+  
+    <div class="sourcedoc-section section-element" id="172c5ec0fb1d8498fbc586ed82cb1f33da9d645e">
+      
+      <h3 class="sourcedoc-section element-name">isEmpty</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean isEmpty(CharSequence str)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"><p>Returns true if the string is null or empty. An empty string is defined to be either 0-length or all whitespace</p>
+</div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="62b044f158bb3c00e5578c388819aca4690d3495">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="7fe01605a3b16cae9f0ce5b25b1311a462848b9c">
+        <td class="sourcedoc-section section-signature">
+          <code>CharSequence str</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        <p>the string to be examined</p>
+
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="d2b67a7ebfc4cbb918fef1210d66714c56b78da3">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        <p>true if str is null or empty</p>
+
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="00482db3b7650b5dba42a65d543c9709bfe67aab">
+      
+      <h3 class="sourcedoc-section element-name">isEmpty</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean isEmpty(<a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> str)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="f7ee404a436fd9fff342a541752ba465750c6be8">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="5f91824bf915705b25c0035f8cad1b1d0454671f">
+        <td class="sourcedoc-section section-signature">
+          <code><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> str</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="8de89a60085414f924913adf6a018601af3ba8d8">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="0882e66dfc2d5cb994c4a1565ecbf35d7c24a41c">
+      
+      <h3 class="sourcedoc-section element-name">isEmpty</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean isEmpty(Collection&lt;?&gt; collection)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="46e4542e451db54534a9cbec04568604694929be">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="cf9580da12f174969a737ecefc4a45399aa47652">
+        <td class="sourcedoc-section section-signature">
+          <code>Collection&lt;?&gt; collection</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="d08433c9fa880ba4d81ea8b57d5884b23e216f3e">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="5542ac9d7855730d7627e63b12d8a73cdbbba9fd">
+      
+      <h3 class="sourcedoc-section element-name">isEmpty</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean isEmpty(Map&lt;?, ?&gt; map)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="00504b9ccbbf31fbbf21c8bd906e0e8cc9382e61">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="bb85a19346cb3146e7174e4a692c3443899fac7f">
+        <td class="sourcedoc-section section-signature">
+          <code>Map&lt;?, ?&gt; map</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="2db9cdb6a6a3fe8d05eea20bae978ee6b579eb52">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="b6ba45e68273a18a56e71814f8ba974c68bb9555">
+      
+      <h3 class="sourcedoc-section element-name">isEmpty</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean isEmpty(Object[] array)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="49bdc191c91b63d3b5080025b1a4669e213cc0a0">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="756e8ffbb065973e675e04d8a0ac87f27c7ee11a">
+        <td class="sourcedoc-section section-signature">
+          <code>Object[] array</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="e2d1c25bd3304596190a8cb8440ad0e1e2ab5f13">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="4a3018ebf927be613d3171b2d87a53ef8804997f">
+      
+      <h3 class="sourcedoc-section element-name">isJsonAware</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean isJsonAware(Object object)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="6b37a8763ad2f4504eeee31c08acaad76eb1360f">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="49b349d38a078214c555157c70cfb7dd34fa0809">
+        <td class="sourcedoc-section section-signature">
+          <code>Object object</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="303e08e598cd202ddb1c0c6d6c6ae6e88112ed98">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="0a7bd067175c6a5a96817ef4df1c786a893b7d4e">
+      
+      <h3 class="sourcedoc-section element-name">elementIsObject</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean elementIsObject(<a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> el)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="965a0779e165bf8345816b95b4c88a71d73abcc8">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="4b64723b1adc32308933c3971ee3d1923096ce41">
+        <td class="sourcedoc-section section-signature">
+          <code><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> el</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="bdc300c61b35ba235967eaeb82835369789553b0">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="c583d428c90a05bbbddeaa4bb44d9d018811db84">
+      
+      <h3 class="sourcedoc-section element-name">elementIsArray</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean elementIsArray(<a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> el)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="6a46da76656243bba3614c855f8bcf0ce662ccda">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="4b64723b1adc32308933c3971ee3d1923096ce41">
+        <td class="sourcedoc-section section-signature">
+          <code><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> el</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="ef5afbee110e6ba6172f724714ee9f427bca6899">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="223eb7eb8cfb5b3aa18ca040521a7ba3f1c15cea">
+      
+      <h3 class="sourcedoc-section element-name">elementIsString</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static boolean elementIsString(<a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> el)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="10439f51a2e5b69354bc6cc6774a556f46786869">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="4b64723b1adc32308933c3971ee3d1923096ce41">
+        <td class="sourcedoc-section section-signature">
+          <code><a href="https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement">JSONElement</a> el</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="a88b939b8d91d977a4cd3da60f5b38e6f6d554fb">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="48647474b89fa8f56ed6bda0f8148a17b51b97bd">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="a1e0055e3e7c0d56691dc086fd7db90adc8e53a5">
+      
+      <h3 class="sourcedoc-section element-name">merge</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static JSONObject merge(JSONObject... sources)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="02f16b522fe6c7f6f940663218078879034cee23">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="831817d7712f76bf932e4d8d60bd57de92479ce4">
+        <td class="sourcedoc-section section-signature">
+          <code>JSONObject... sources</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="90febf48edb359e18baff0664f5a5c50cac9bfaf">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="aeb7fbde09f4867d617fabd5accd2611571998bf">
+        <td class="sourcedoc-section section-signature">
+          <code>JSONObject</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="bd864fc20f8f86383647958ecb183715833cbc20">
+      
+      <h3 class="sourcedoc-section element-name">box</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static Integer box(int[] items)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="cb7d1249fdd9f6eb9d08662017463f43c57bb52a">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="ce4025da00b06f86cb6332ad4c4355beb9a01b01">
+        <td class="sourcedoc-section section-signature">
+          <code>int[] items</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="a9b1f3e9739221793691993dba5768f221a750e2">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="9edcffff4461c9083fbff857f8dcee0f0769cbd4">
+        <td class="sourcedoc-section section-signature">
+          <code>Integer</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="8d9df0241ed63497d9ec0c39fa7050c45eedfae8">
+      
+      <h3 class="sourcedoc-section element-name">box</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static Long box(long[] items)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="dbc1dcdd017515cf5f555f140ceff8cb75558816">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="df168a3f1fdd67f5a39b26692392a9fed80c4eeb">
+        <td class="sourcedoc-section section-signature">
+          <code>long[] items</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="fb74b62d1f2bb3e07eabc0f08fdfb9d01dd0b565">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="11eda67f9b15a760342f8e98a3fc78d8d3ea9945">
+        <td class="sourcedoc-section section-signature">
+          <code>Long</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="fbbaa25faf4206ca3cc7c322aa36c5c0af7775ed">
+      
+      <h3 class="sourcedoc-section element-name">box</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static Boolean box(boolean[] items)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="049f207fc3fff6bccf33e3066f32dfada343c9b0">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="3b18018fe9009e4af1f030ddfdd9dd6133b7b2f9">
+        <td class="sourcedoc-section section-signature">
+          <code>boolean[] items</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="4badf8e35548721f814217f248fac8db5c0f8347">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="b76ff4906f33c2dd97ddd929b9662ba8cac6174c">
+        <td class="sourcedoc-section section-signature">
+          <code>Boolean</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="d5c492a49da5cf5bd2d2a320ac58343217a9fe18">
+      
+      <h3 class="sourcedoc-section element-name">box</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static Double box(double[] items)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="e2aac41cc803bb1224f2f17bacf42969c4fe9a9f">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="4f43aca91a4052f40b0f188e1e47755c7461d4b4">
+        <td class="sourcedoc-section section-signature">
+          <code>double[] items</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="f2cff678e361dc005c7fc2dfa2a8ddbe5e1fab35">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="81581597044514bf54d4f97266022fc991f3915e">
+        <td class="sourcedoc-section section-signature">
+          <code>Double</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="616a121638cb9c8503ac5fa627f92bf14ddfa629">
+      
+      <h3 class="sourcedoc-section element-name">box</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static Float box(float[] items)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="5d27741b35250fc70d3dd3d550bb604df09cafef">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="96b74f12a11c1d22e38966d8e8b80815f68164ff">
+        <td class="sourcedoc-section section-signature">
+          <code>float[] items</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="59f210621a1bc6659e2aee57ad523825a0edfcd1">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="64435fd82de7b1d614dfb9844848a48b14c6cd2c">
+        <td class="sourcedoc-section section-signature">
+          <code>Float</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+    <div class="sourcedoc-section section-element" id="ae022d5f74ce794bf6fff6b8a378c360a15f1232">
+      
+      <h3 class="sourcedoc-section element-name">box</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>public static Object box(Object items)</code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="607d6764d3cd3a68f15088572904956b59597e38">
+
+
+  <p class="sourcedoc-section section-name"><strong>Parameters</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="21cc98a585b80c4e43936c298bf403f41a91d606">
+        <td class="sourcedoc-section section-signature">
+          <code>Object items</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="05aad0b9711ad246e15e7772f0e0fe6a5ff2c6c5">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="2883f191bc5ebfdc16c0813eff659b35363ea69b">
+        <td class="sourcedoc-section section-signature">
+          <code>Object</code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+
+</div>
+
+        
+      
+    </div>
+  
+
+</div>
+
+</div>
+
+
+
+
+
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+        
+        </div>
+
+        <!-- Page navigation
+        =========================================== -->
+        <div class="col-md-3" role="complementary">
+        <div class="bs-docs-sidebar hidden-print" id="bs-docs-sidebar">
+    <section id="search" >
+        <form data-orchid-search="">
+            <div class="input-group">
+                <input type="text" name="query" id="query" class="form-control" placeholder="Search&hellip;">
+                <span class="input-group-btn"><button type="submit" class="btn btn-default">Go</button></span>
+            </div>
+        </form>
+        <div id="search-results" data-orchid-search-results style="display: none;">
+            <b>Search Results</b>
+            <ul></ul>
+        </div>
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+            <div class="loader">Loading...</div>
+        </div>
+    </section>
+
+    <ul class="nav bs-docs-sidenav">
+        
+    </ul>
+
+    
+    <!-- start:inject components -->
+    
+    <!-- end:inject components -->
+
+
+
+    <a class="back-to-top" href="#top">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to top
+    </a>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="container bs-docs-container">
+    <footer class="bs-docs-footer" role="contentinfo">
+    <div class="row">
+        <div class="col-xs-12">
+            <nav aria-label="navigateClasses">
+                <ul class="pager">
+                    
+
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="icons">
+    
+    
+        <a href="https://github.com/JavaEden/Common" class="fa fa-github"></a>
+    
+    
+    </div>
+    <br>
+    <p>
+    Documentation template based on the
+    <a href="https://github.com/mistic100/jekyll-bootstrap-doc">Jekyll Bootstrap Doc</a>
+    Jekyll theme by the <a href="https://getbootstrap.com">Bootstrap team</a>. Site created with
+    <a href="https://orchid.run">Orchid</a>.
+</p>
+
+<ul class="bs-docs-footer-links muted">
+    <li>Currently 2.0.0</li>
+</ul>
+
+
+</footer>
+    </div>
+</div>
+
+
+<!-- start:inject scripts -->
+<script  src="https://javaeden.github.io/Common/BsDoc/f268fe27/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://javaeden.github.io/Common/BsDoc/f268fe27/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script  src="https://javaeden.github.io/Common/BsDoc/f268fe27/ajax/libs/bootbox.js/4.3.0/bootbox.min.js"></script>
+<script  src="https://javaeden.github.io/Common/BsDoc/f268fe27/assets/js/bsdoc.js"></script>
+<script  src="https://javaeden.github.io/Common/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://javaeden.github.io/Common/lunr/lunr.js"></script>
+<script  src="https://javaeden.github.io/Common/assets/js/orchidSearch.js"></script>
+<!-- end:inject scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
+
+<script>
+    $(function () {
+        window.colors = ['#740001', '#000000'];
+                  
+    trianglify({"x_colors":["#740001","#eeba30","#740001"]});
+
+        buildNav();
+    });
+</script>
+
+</body>
+</html>

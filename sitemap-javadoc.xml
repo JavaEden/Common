@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/inputstreamignorer</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/inputstreamcollector</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/onoutputstreamcreatedcallback</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/iostreamutils/inputstreamprinter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/edenpair</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/util/edenutils</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/json</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonable</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/common/json/jsonelement</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cliflags</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cliflags/flagvalue</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cliflags/parseresult</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagsparser</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagsparser/flagsparserbuilder</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagsparser/parseresult</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/flagaliases</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/cli/cli</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/registration</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/registration/prioritized</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/longconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/stringconverterhelper</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/dateconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/flexibleiterableconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/clogstringconverterhelper</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/integerconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/stringconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/converters</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/datetimeconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/numberconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/typeconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/booleanconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/doubleconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/extractableconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/timeconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/flexiblemapconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/converters/floatconverter</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/extractableoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/anyoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/jsonobjectoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/doubleoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/floatoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/intoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/dateoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/datetimeoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/stringarrayoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/longoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/stringoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/enumoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/booleanoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/jsonarrayoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/timeoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractors/listoptionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/doubledefault</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/booleandefault</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/floatdefault</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/impliedkey</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/intdefault</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/archetype</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/longdefault</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/archetypes</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/validate</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/alloptions</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/stringdefault</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/protected</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotations/option</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractor/extractorbuilder</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/optionextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/extractable</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/defaultextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/defaultinstancecreator</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/androidextractor</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/instancecreator</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/annotatedvalidatorwrapper</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/optionsvalidator</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    <url>
+        <loc>https://javaeden.github.io/Common/javadoc/com/eden/orchid/api/options/optionarchetype</loc>
+        <lastmod>2020-09-01</lastmod>
+        <priority>0.0</priority>
+        
+    </url>
+    
+</urlset>

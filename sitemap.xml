@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-assets.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-external.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-changelog.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-home.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-javadoc.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-wiki.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-sitemap.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://javaeden.github.io/Common/sitemap-indices.xml</loc>
+        <lastmod>2020-09-01</lastmod>
+    </sitemap>
+    
+</sitemapindex>
